@@ -1,0 +1,39 @@
+**Steps to create sqs queue:
+1.click on create queue button
+2.Details:
+Type:standard
+Name:Any Name
+configuration:delivery delay-0-15 min
+encryption:enabled
+Access policy:only the queue owner
+Redrive allow policy:disabled
+Dead-letter queue:disabled
+Tags:key:user,value:pravalika
+Then click on create queue
+**After creating queue then click send and receive message and after that click poll for messages to view 
+message.
+
+**Steps to create S3 bucket:
+1.Click on create bucket
+(us east-1)
+2.general purpose
+3.unique Name
+block all public
+add tag:key:user value:pravalika
+encryption type:useServer-side encryption with Amazon S3 managed keys (SSE-S3)
+click on create bucket.
+
+create a SNS concole in AWS 
+1).create topic
+->standard
+->create a new topic name(name of topic)
+->Display name(give any name and check the availability)
+click create topic
+2).create subscription
+->protocol:Email
+->endpoint:emailaddress(sreepathirajeswari85@gmail.com)
+publish message
+subject->message description
+TTL:30 sec
+message body->message
+publish msg
